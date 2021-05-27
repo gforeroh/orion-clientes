@@ -25,3 +25,8 @@ Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
 Route::middleware(['auth:sanctum', 'verified'])
     ->get('/users', UsersTable::class) // Retorna componete de liveware
     ->name('users');
+
+
+// Route::get('/admin', function () {
+//         return "hola Administrador";
+//     });

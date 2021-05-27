@@ -1,26 +1,4 @@
-@extends('adminlte::page')
-
-@section('title', 'Dashboard')
-
-@section('content_header')
-    <h1>Dashboard</h1>
-@stop
-
-@section('content')
-    <p>Welcome to this beautiful admin panel.</p>
-@stop
-
-@section('css')
-    <link rel="stylesheet" href="/css/admin_custom.css">
-@stop
-
-@section('js')
-    <script> console.log('Hi!'); </script>
-@stop
-
 <div>
-    {{-- If you look to others for fulfillment, you will never truly be fulfilled. --}}
-
     <x-slot name="header">
         <h2 class="font-semibold text-xl text-gray-800 leading-tight">
             {{ __('Users') }} desde Liveware
@@ -111,5 +89,4 @@
             </div>
         </div>
     </div>
-
 </div>
