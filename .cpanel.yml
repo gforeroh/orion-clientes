@@ -1,5 +1,8 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/orioncomunicacio/clientes.orioncomunicaciones.com/public/
-    - /bin/cp -R images $DEPLOYPATH
+    - export DEPLOYPATH=/home/orioncomunicacio/clientes.orioncomunicaciones.com/
+    - /bin/cp -r * $DEPLOYPATH #copy all from root
+    - /bin/cp -r ./public/* $DEPLOYPATH/public_html/
+    # - /bin/cp ./public/js/*.js $DEPLOYPATH/public_html/js
+    # - /bin/cp ./public/css/*.css $DEPLOYPATH/public_html/css
