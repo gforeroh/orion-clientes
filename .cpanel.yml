@@ -1,8 +1,9 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/orioncomunicacio/clientes.orioncomunicaciones.com/
+    - export DEPLOYPATH=/home/orioncomunicacio/clientes.orioncomunicaciones.com
     - /bin/cp -r * $DEPLOYPATH #copy all from root
     - /bin/cp -r ./public/* $DEPLOYPATH/public_html/
+    - composer install
     # - /bin/cp ./public/js/*.js $DEPLOYPATH/public_html/js
     # - /bin/cp ./public/css/*.css $DEPLOYPATH/public_html/css
